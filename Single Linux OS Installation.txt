@@ -1,0 +1,27 @@
+For single OS installation:
+Once you're all set then create a directory/folder in your computer by any name you prefer which will be your 
+main folder where you will initiate and create vagrantfile.
+Open elevated command prompt or run powershell as administrator and go to the directory that you just created.
+
+you'll now add the OS box from: https://app.vagrantup.com/boxes/search by this command:
+>vagrant box add 'xxxx (name of your linux OS)'
+
+when this adding is successful,initialize it by this command:
+>vagrant init 'xxxx(name of your OS)'.
+
+After that run:
+>vagrant up and it will create the environemnt and have your OS installed and ready on your provider which is
+virtalbox.
+
+If you come across any version mismatch error the you'll need to stop the OS by this:
+>vagrant halt.
+
+You can easily fix it by installing this plugin:
+>vagrant plugin install vagrant-vbguest and your issues should be fixed.
+
+Now you'll reboot your OS bythis command:
+>vagrant reload.
+
+Connet to your OS by this command:
+>vagrant ssh and you should be into your linux OS.
+

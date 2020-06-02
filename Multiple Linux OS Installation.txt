@@ -1,0 +1,6 @@
+open elevated command prompt or powershell and go to that newly created location of yours and run: vagrant init
+
+This will create the vagrantfile in your directory.Go to that location and open the vagrant file in notepador atom or  microsoft VSS code.
+
+Modify this file as per your requirements and needs.I have a costomized 'vagrantfile' in the repository. please follow this and you should
+be all good.

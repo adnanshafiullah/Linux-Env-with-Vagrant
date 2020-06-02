@@ -1,0 +1,25 @@
+In order to use Vagrant tool to have to create local linux environment in a windows computer (Windows 10 in my case),
+below is the general process that I’ve adopted after learning the fundamentals and working through some trial and error.
+Follow these steps, editing any necessary information specific to your individual needs, and you should be up and running 
+with Vagrant in about 15 minutes or less!
+
+    1.Install VirtualBox > https://www.virtualbox.org/
+    2.Install Vagrant > https://www.vagrantup.com/downloads
+    3.Create a local directory for Vagrant
+    4.Create a Vagrantfile in your newly created directory
+    5.Run vagrant up and provisioning your virtual machine
+
+Once you have installed them make sure that 'Hyper-V' is disabled on your computer as it may create an conflict
+with virtualbox and thus give you issues. 
+
+To disable 'Hyper-V',from elevated  command prompt:
+
+bcdedit /set hypervisorlaunchtype off   ---  to disable hypervisor
+bcdedit /set hypervisorlaunchtype auto  ---  to reenable it (default value).
+OR
+From Powershell (run as administrator) run >Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-All 
+
+Of course you'll need to restart your computer after running commands from either of the steps above.
+
+
+
